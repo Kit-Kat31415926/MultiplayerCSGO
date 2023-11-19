@@ -1,0 +1,43 @@
+What is the output if mystery(5) is called in another class?
+*...***...*****...**********
+*****
+What is the output if mystery(20) is called in another class?
+nothing...*...*****...**********
+nothing
+&&&
+public void mystery(int x){
+  for(int i = x; i < 10; i++){
+    System.out.print("*");
+  }
+}
+&&&
+What is the value of y on Line 2 if mystery(4) outputs 6?
+0...1...2...3
+1
+&&&
+public int mystery(int x) {
+  int y = ?; // Line 2
+  int z = x;
+  z /= y;
+  z += 2;
+  System.out.println(z);
+}
+&&&
+What is the output of mystery(0) if a is 1?
+0...1...2...3
+1
+&&&
+public void mystery(int x) {
+  int a = BLANK;
+  int b = x;
+  int c = -1;
+  if ((b + 1) == a) {
+    b++;
+    c += b;
+  }
+  if (c == a) {
+    a--;
+    b = 4;
+  }
+  System.out.println(b);
+}
